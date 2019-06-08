@@ -109,12 +109,12 @@ def load_test_data():
 
 def get_batch_data():
     # Load data
-#    X, Y = load_train_data()
-#    np.save("./preprocessed/X.npy", X)
-#    np.save("./preprocessed/Y.npy", Y)
+    X, Y = load_train_data()
+    np.save("./preprocessed/X.npy", X)
+    np.save("./preprocessed/Y.npy", Y)
 
-    X = np.load("./preprocessed/X.npy")[:, :hp.maxlen]
-    Y = np.load("./preprocessed/Y.npy")[:, :hp.maxlen]
+ #   X = np.load("./preprocessed/X.npy")[:, :hp.maxlen]
+ #   Y = np.load("./preprocessed/Y.npy")[:, :hp.maxlen]
 
     return X, Y
 
